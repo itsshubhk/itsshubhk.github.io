@@ -64,7 +64,7 @@ export const profile: Profile = {
   },
   footerTagline: 'Designed with curiosity. Built with code.',
   social: [
-    { key: 'github', label: 'GitHub', url: 'https://github.com/ShuhbamKhare', enabled: true },
+    { key: 'github', label: 'GitHub', url: 'https://github.com/itsshubhk', enabled: true },
     {
       key: 'linkedin',
       label: 'LinkedIn',
