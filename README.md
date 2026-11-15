@@ -85,14 +85,14 @@ The nav, hero and resume section all use the same PDF. Download and view actions
 | Hero character (your reference image, optimised WebP) | `public/images/character-hero.webp` |
 | About illustration | `public/images/about-illustration.webp`, optimized from the supplied `A little about me.png` |
 | Experience illustration | `public/images/experience-illustration.webp`, optimized from the supplied `A foundation built in enterprise software.png` |
-| Contact character | `ClayDeveloper.vue` provides the waving pose, with shared clay material and the isolated reference head in `public/images/character-head.webp` |
+| Contact illustration | `public/images/contact-illustration.webp`, optimized from the supplied `Good work starts with a conversation.png` |
 | Clay objects (laptop, robot, database, cloud, network, envelope, …) | Vue SVG components in `src/components/illustrations/Clay*.vue`, shaded by one shared SVG filter in `ClayDefs.vue` |
 | Scene compositions | `HeroScene`, `AboutScene`, `ExperienceScene`, `SkillsScene`, `ContactScene`, `ProjectArt` |
 | Favicon / social preview | `public/favicon.svg`, `public/og-image.png` (1200×630) |
 
-About and Experience use the complete illustrations supplied in the workspace root. They are optimized to WebP without cropping, reshaping, or overlaying extra objects. Their original dark studio backgrounds are preserved inside consistent rounded frames that work in both themes. Explicit dimensions reserve the correct aspect ratio; the scenes use normal-flow images rather than absolutely positioned composites.
+About, Experience and Contact use the complete illustrations supplied in the workspace root. They are optimized to WebP without cropping, reshaping, or overlaying extra objects. Their original dark studio backgrounds are preserved inside consistent rounded frames that work in both themes. Explicit dimensions reserve the correct aspect ratio; the scenes use normal-flow images rather than absolutely positioned composites. Contact aligns to the right content edge on desktop and centers beneath the copy on mobile.
 
-To replace either image, update the corresponding WebP asset and its intrinsic dimensions in `AboutScene.vue` or `ExperienceScene.vue`. Keep the original PNGs as source artwork. Contact still uses the locally composed waving SVG pose; customize it in `ClayDeveloper.vue` and `ContactScene.vue`. No remote image-generation service is used.
+To replace an image, update the corresponding WebP asset and its intrinsic dimensions in `AboutScene.vue`, `ExperienceScene.vue` or `ContactScene.vue`. Keep the original PNGs as source artwork. No remote image-generation service is used.
 
 To convert a PNG to WebP: `python -c "from PIL import Image; Image.open('in.png').save('out.webp','WEBP',quality=86)"`.
 
