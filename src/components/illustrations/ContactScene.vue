@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import ClayDeveloper from '@/components/illustrations/ClayDeveloper.vue'
-import ClayEnvelope from '@/components/illustrations/ClayEnvelope.vue'
+import { asset } from '@/utils/helpers'
 </script>
 
 <template>
-  <figure class="relative mx-auto w-full max-w-[22rem]">
-    <div class="relative aspect-[6/7]">
-      <div class="illustration-stage absolute inset-x-[4%] bottom-[8%] top-[12%] rounded-t-[46%] rounded-b-[2rem] bg-sky/30"></div>
-      <ClayDeveloper
-        pose="waving"
-        label="Clay Shubham standing and waving a raised hand beside a friendly envelope."
-        class="clay-shadow absolute bottom-[5%] left-1/2 w-[93%] -translate-x-1/2"
-      />
-      <ClayEnvelope class="absolute bottom-[0%] right-[-3%] w-[43%] rotate-[-8deg]" />
-    </div>
-    <figcaption class="mt-3 text-center font-display text-lg italic">Good work starts with a conversation.</figcaption>
+  <figure class="mx-auto w-full max-w-[25rem] lg:mr-0 xl:max-w-[30rem] 2xl:max-w-[36rem]">
+    <img
+      :src="asset('images/contact-illustration.webp')"
+      width="1128"
+      height="1394"
+      loading="lazy"
+      decoding="async"
+      alt="Clay-style Shubham in a blue hoodie, standing and waving beside an envelope to welcome a conversation."
+      class="block h-auto w-full rounded-[2rem] border border-line bg-[#131c29] shadow-[var(--shadow-clay-lg)]"
+    />
+    <figcaption class="mt-5 text-center font-display text-lg italic leading-snug">Good work starts with a conversation.</figcaption>
   </figure>
 </template>
