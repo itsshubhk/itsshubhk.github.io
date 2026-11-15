@@ -29,8 +29,8 @@ onBeforeUnmount(() => clearTimeout(copyTimer))
 
 <template>
   <section id="contact" aria-labelledby="contact-title" class="section-pad">
-    <div class="container-page grid items-center gap-12 border-t border-line pt-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
-      <div v-reveal>
+    <div class="container-page grid items-start gap-10 border-t border-line pt-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+      <div v-reveal class="min-w-0">
         <p class="section-label mb-6"><span class="section-number">06</span>Let's connect</p>
         <h2 id="contact-title" class="text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.12]">
           <span class="mb-4 block font-sans text-lg font-normal tracking-normal text-ink-soft">{{ profile.contact.heading[0] }}</span>
@@ -54,7 +54,9 @@ onBeforeUnmount(() => clearTimeout(copyTimer))
           <li v-for="s in links" :key="s.key"><SocialLink :social="s" /></li>
         </ul>
       </div>
-      <ContactScene v-reveal="0.1" />
+      <div v-reveal="0.1" class="min-w-0 lg:pt-14">
+        <ContactScene />
+      </div>
     </div>
   </section>
 </template>
