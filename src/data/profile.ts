@@ -37,7 +37,7 @@ export const profile: Profile = {
   about: {
     heading: 'A little about me',
     paragraphs: [
-      "I'm a Technical Specialist at Knorr-Bremse TCI in Pune, with eight years of experience in enterprise software. My foundation spans Java and Spring, Python with FastAPI and Django, and Vue interfaces that make complex engineering workflows usable.",
+      "I'm a Pune-based Technical Specialist with eight years of experience in enterprise software. My foundation spans Java and Spring, Python with FastAPI and Django, and Vue interfaces that make complex engineering workflows usable.",
       "I enjoy the space between a business problem and a working system. Understanding the context, making sensible technical choices, testing carefully and delivering reliably matter as much to me as writing the code.",
       "I'm currently working on an industrial engineering workbench, a message management platform and an engineering calculation platform, owning architecture, design-system decisions and implementation end to end. Their names and descriptions are generalized here to protect confidential work.",
       "My next chapter is Applied AI and Forward Deployed Engineering. I'm learning RAG, LLM APIs and agentic workflows, with three planned AI and automation portfolio concepts alongside my professional projects. My focus is turning those ideas into practical systems, building on my enterprise engineering background.",
