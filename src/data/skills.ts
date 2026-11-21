@@ -35,7 +35,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Cloud and Deployment',
     description: 'Cloud infrastructure, application packaging and deployment.',
-    skills: ['AWS', 'Docker', 'Kubernetes'],
+    skills: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'Linux', 'Cloud-Native Networking'],
     accent: 'lavender',
   },
   {
